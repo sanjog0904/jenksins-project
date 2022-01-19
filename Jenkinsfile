@@ -12,8 +12,6 @@ pipeline {
                 }
             }
         }
-    }
-    stages {
         stage('build image') {
             steps {
                 script {
@@ -24,7 +22,6 @@ pipeline {
                         sh 'docker push sanjog0904/my-repo:jma-2.0'
                 }
             }
-        }
-        
+        }       
     }
 }
